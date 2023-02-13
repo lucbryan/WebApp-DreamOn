@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Dream On</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/tesi.css">
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header class="headerBar dark">
+    <div class="appName"><img class="logo" src="imgs/logo.png"> Tô <br> Sonhando </div>
+    
+    <!--... <div class="appName"><img class="logo" src="imgs/logo.png"> Dream <br> On </div> -->
+    <div class="badge warning"><span style="font-weight: bold" id="estado">0</span></div>
+  </header>
+
+
+  
+
+  <main>
+    <div id="stars-group-1"></div>
+    <div id="stars-group-2"></div>
+    <div id="stars-group-3"></div>
+    <div id="stars-group-4"></div>
+    <div id="stars-group-5"></div>
+    <div id="stars-group-6"></div>
+  </main>
+
+
+
+  <div id="listaSonhos2"><div id="listaSonhos"> <br><br><br></div></div>
+
+
+  <div id="tela1" class="component">
+    <div class="componentHeader">
+      <h1 id="titulo" class="componentTitle">Meus Sonhos💤</h1>
+      <button id="btnAdic" class="button"> <img src="imgs/plus0.png"/></button>
+      <button id="btnModoTela" class="button"><img id="modoTelaIcon" src="imgs/darkMode.png"/></button>
+      <button id="btnFilter" class="button"><img src="imgs/filter.png"/></button>
+    </div>
+
+    <div class="componentContent">
+      <div id="blank"><img id="ImgGif"/><p>Loading dream...</p></div>
+      <ul id="listaDeTarefas" class="list hidden"></ul>
+    </div>
+  </div>
+
+  <div id="tela2" class="component hidden">
+    <div class="componentHeader"><h1 class="componentTitle">Novo Sonho</h1></div>
+
+    <div class="componentContent">
+      <div class="field"><input placeholder="Titulo" type="text" class="camp_text" id="inputNovoSonho" /></div> <br>
+      <div class="field"><input id="dataSonho" type="text" placeholder="Data" onfocus="(this.type='date')" onblur="(this.type='text')"></div> <br>
+      <div class="field"><textarea placeholder="Descrição" id="descricaoSonho"></textarea></div> <br>
+      <div class="field"><input type="file" class="camp_text" id="file" multiple accept="image/*"></div>
+      
+      <div class="buttonGroup mt1 end">
+          <button id="btnCanc1" class="button quarter light">Cancelar</button>
+          <button id="btnInc" class="button quarter primary" disabled>Incluir</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="tela3" class="component hidden">
+    <div class="componentHeader"><h1 class="componentTitle">Alteração de Sonho</h1></div>
+   
+    <div class="componentContent" id="inputAlteraSonho">
+      <div class="field"><input placeholder="Titulo" id="InputAlteraTitulo" type="text" autocomplete="off" /></div><br>
+      <div class="field"><input id="inputAlteraData" type="text" placeholder="Data" onfocus="(this.type='date')"onblur="(this.type='text')"></div><br>
+      <div class="field"><textarea placeholder="Descrição" id="inputAlteraDescricao"></textarea></div><br>
+      <div class="field"><input type="file" class="camp_text" id="file2" multiple accept="image/*"></div>
+      
+      <div class="buttonGroup end mt1">
+        <button id="btnCanc2" class="button quarter light">Cancelar</button>
+        <button id="btnAlt" class="button quarter primary">Alterar</button>
+      </div>
+
+      <div class="buttonGroup end mt3"><button id="btnDel" class="button quarter danger">Apagar Sonho</button>
+</div>
+    </div>
+  </div>
+
+
+  <div id="tela4" class="component hidden">
+    <div class="componentHeader"><h1 class="componentTitle" id="sonhoClicked"></h1></div>
+
+    <div class="componentContent">
+      <div class="box">
+        <div id="imagemSonhoClicked" alt="11/04/2000"> </div>
+        <a id="dataSonhoClicked"></a>
+        <span id="textSonho"></span>
+      </div>
+    </div>
+
+    <div class=""><button style="float: right;" id="" class="button quarter light" onclick="ativa('tela1');">Voltar</button></div></div>
+  </div>
+</body>
+
+
+<script src="js/script.js"></script>
+<script src="js/tesi"></script>
+</html>
