@@ -205,3 +205,52 @@ input, textarea,p,label {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+  max-width: 300px;
+  height: 47px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+
+#myForm button{
+  
+  color: red;
+  background-color: white;
+  font-size: 12px;
+}
+
+#myForm label{
+  color: yellow;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.checkbox{
+  height: 10px;
+  width: 30px;
+  margin-top: 8px;
+  position: absolute;
+}
+
+
+#colorPicked1,#colorPicked2{
+  height: 15px;
+  width: 30px;
+}
+
+
+
+
+

@@ -1,7 +1,7 @@
 * {
-  margin: 0;
+  margin: -0px;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: courier-new;
   font-size: 12pt;
   font-weight: normal;
   line-height: 1.5rem;
@@ -41,8 +41,8 @@ p {
   left: 0;
   width: 100%;
   background-color: #1d3a4e;
-  color: #fff;
-  height: 5rem;
+  color: rgb(48, 157, 177);
+  height: 5.1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,6 +52,8 @@ p {
 .appName {
   font-size: 2rem;
   margin-left: 1rem;
+  font-weight: bold;
+  color:#fff;
 }
 
 .badge {
@@ -68,7 +70,7 @@ p {
   position: fixed;
   left: 0;
   padding: 1rem 0;
-  background-color: #fff;
+  background-color: rgb(46, 18, 99);
   height: 3rem;
   width: 100%;
   display: flex;
@@ -334,11 +336,9 @@ p {
   background: #cbd4d7;
   border: thin solid #bac3c6;
 }
+
 .dark {
 
-  background-image: linear-gradient(to right top, #eb7fa8, #c86b9d, #a35890, #7f4781, #5b3771, #563976, #4f3c7b, #483e7f, #5f549d, #776bbd, #8f82dd, #a89bff);
-  
-  border: thin solid #0c293d;
 }
 .dark:active {
   background: #00182c;
